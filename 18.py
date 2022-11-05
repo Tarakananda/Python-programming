@@ -1,0 +1,10 @@
+from array import *
+vals = array('i',[1,2,3,4,5,6])
+print(vals)
+print(vals[1])
+print(vals.buffer_info())
+print(vals.typecode)
+newArr = array(vals.typecode, [a for a in vals])
+print(newArr)
+k=int(input("Enter a valiue :"))
+print(vals.index(k))
